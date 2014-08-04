@@ -7,7 +7,7 @@ module ActiveAdmin
     module Helpers
 
       if ActiveAdmin::DependencyChecker.rails_3_1?
-        include Sprockets::SassFunctions
+        include ::Sass::Rails::Helpers
       end
 
       # Provides a helper in SASS to ensure that the paths to image
